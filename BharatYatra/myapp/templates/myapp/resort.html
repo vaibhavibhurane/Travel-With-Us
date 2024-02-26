@@ -1,0 +1,888 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resort</title>
+    <style>
+        body {
+         font-family: 'Pacifico', cursive;
+            overflow-x: hidden;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Yatra</title>
+    <link rel="icon" href="/static/images/logo1.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Lora&family=Merriweather:ital@1&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+<!--    <link rel="stylesheet" href="/static/css/style2.css">-->
+     <link rel="stylesheet" href="/static/css/animations.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+   </head>
+<body>
+ <div class="container-fluid">
+
+        <!-- Navbar Sectionsssss -->
+
+        <section id="navbar">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+                <div class="container">
+                    <div class="col-md-4">
+                        <a class="navbar-brand d-inline-block" href="#">
+                            <img src="/static/images/logo1.png" alt="logo" width="30vh" height="30vh">
+                        </a>
+                        <p id="navelts" class="d-inline-block fs-4 text-align-bottom mb-1">BharatYatra</p>
+                    </div>
+
+                    <div class="col-md-8" style="margin-left: 1vh;">
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item" id="navelts">
+                                    <a class="nav-link text-end" href="{% url 'index' %}">Home</a>
+                                </li>
+                                <li class="nav-item" id="navelts">
+                                    <a class="nav-link text-end" href="#north">North</a>
+                                </li>
+                                <li class="nav-item" id="navelts">
+                                    <a class="nav-link text-end" href="#south">South</a>
+                                </li>
+                                <li class="nav-item" id="navelts">
+                                    <a class="nav-link text-end" href="#west">West</a>
+                                </li>
+                                <li class="nav-item" id="navelts">
+                                    <a class="nav-link text-end" href="#east">East</a>
+                                </li>
+                                  <li style="margin-left: 5vh; margin-right: 4vh; padding-right: 0;">
+                                     <a href="{% url 'packages' %}">
+                                    <input type="button" class="btn btn-info " value="Book Now">
+                                         </a>
+                                </li>
+                                <!-- Example split danger button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-warning">Resorts</button>
+  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#north">Resorts in North</a></li>
+    <li><a class="dropdown-item" href="#south">Resorts in South</a></li>
+    <li><a class="dropdown-item" href="#west">Resorts in West</a></li>
+    <li><a class="dropdown-item" href="#east">Resorts in East</a></li>
+  </ul>
+</div>
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+
+                    <section id="hero">
+
+            <div class="parallax justify-content-center ">
+                <div class="d-flex flex-column align-items-center">
+                    <h1 id="hero_head" class="display-1">Resorts in India</h1>
+                    <p id="hero_subhead" class="display-7 m-4"> <br>Bharat Yatra Holidays invites you to embark on unforgettable journeys where each destination unveils a captivating story. Our carefully curated resorts offer a harmonious blend of luxury and nature, providing a haven for relaxation and immersive experiences.<br><br> From the tranquil embrace of mountainside retreats to the allure of beachfront villas, our accommodations promise a symphony of comfort. Our travel experiences go beyond reaching destinations; they craft moments to be cherished—exploring diverse cultures, engaging in thrilling adventures, and creating memories that linger. Join Bharat Yatra Holidays for a magical journey where every holiday unfolds as a chapter in your life's extraordinary narrative.
+                    </p>
+
+                    <style>
+                        .parallax {
+                         background-image: url('{% static "images/tajmahalpic.jpg" %}');
+                         }
+                    </style>
+                </div>
+            </div>
+        </section>
+<!--North-->
+            <section style="background-color: #f5deb3 " id="north">
+                <h1 class="text-center display-5 mx-1 pb-3 pt-5" id="main_heading3">Places & Resorts in North</h1>
+                <p class="display-7 m-3">Discover the allure of North India with Bharat Yatra Holidays, where luxury meets culture in a symphony of enchantment. Our carefully curated resorts transport you to havens of opulence, whether you're nestled in the tranquil embrace of the Himalayas or indulging in regal splendor in Rajasthan. Explore the majestic palaces of Jaipur, breathe in the spiritual aura of Varanasi's ghats, or lose yourself in the vibrant markets of Delhi. With Bharat Yatra, each destination is a canvas of rich history, tantalizing cuisine, and the warm embrace of hospitality. Let us be your guide to the treasures of North India, where every journey is a celebration of discovery and every stay a chapter in your extraordinary travel tale.</p>
+
+                <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Himachal Pradesh</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/10.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Kandaghat Shimla</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/11.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra White Meadows Manali</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/12.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Snow Peaks Manali</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/13.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Shimla</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/14.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Janjehli</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/15.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Pristine Peaks Naldehra Shimla</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/16.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Dharamshala Himanchal Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Uttarakhand</h1>
+                        <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/17.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Mussoorie</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/18.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Binsar valley Almora</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/19.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Kanatal</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/20.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Corbett</h5>
+                            </div>
+                        </div>
+                        </div>
+
+                    <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Punjab, Ladakh, Jammu And Kashmir</h1>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/21.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Fortune Ranjit Vihar</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/22.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Driftwood Ladakh</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/23.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Kashmir House Boat Srinagar</h5>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                </section>
+<!--  south  -->
+               <section style="background-color: #ffddca " id="south">
+                <h1 class="text-center display-5 mx-1 pb-3 pt-5" id="main_heading3">Places & Resorts in south</h1>
+                <p class="display-7 m-3">Discover the allure of South India with Bharat Yatra Holidays, where each resort is a sanctuary of serenity nestled in the heart of captivating landscapes. From the misty hills of Munnar to the sun-kissed beaches of Goa, our carefully curated resorts redefine luxury, offering a perfect blend of opulence and nature's charm. Embark on a culinary journey with aromatic spices, explore ancient temples that whisper tales of history, and unwind in lavish accommodations that evoke a sense of tranquility. Let Bharat Yatra Holidays be your guide to the enchanting beauty of South India, where every destination promises an extraordinary escape, and every moment unveils a story waiting to be written.</p>
+                <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Kerala</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/24.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Mount Serene, Munnar</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/25.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Thekkady</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/26.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Ashtamudi</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/27.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Poorvar</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/28.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Cherai, Kochi</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/29.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Arookutty, Alleppey</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/30.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Dvythiri Village Wayanad</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/31.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Ramada Alleppey</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Karnataka</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/32.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Madikeri, Coorg</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/33.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Virajpet, Coorg</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/34.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">Vijayshree Resort & Heritage Village</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/35.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Eagleton Golf Resort, Bengaluru </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                      <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Tamil Nadu</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/36.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Danish Villa, Ooty</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/37.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Derby Green, Ooty</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/38.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">Le Poshe</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                      <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Andaman And Nicobar Island</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/39.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Symphony Summer Sands, Neil Island</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/40.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Symphony Samudra Port Blair </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/41.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">Symphony Palms Havelock Island</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                     <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Puducherry, Andhra Pradesh</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/42.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Puducherry</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/43.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Starlit Suites, Andhra Pradesh</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+</section>
+<!--west-->
+            <section style="background-color: #f3e5ab " id="west">
+                <h1 class="text-center display-5 mx-1 pb-3 pt-5" id="main_heading3">Places & Resorts in West India</h1>
+                <p class="display-7 m-3">Discover the allure of West India with Bharat Yatra, where every resort is a sanctuary of opulence and tranquility, offering breathtaking views and unparalleled luxury. From the sun-kissed beaches of Goa to the regal palaces of Rajasthan, our curated destinations redefine the art of travel. Dive into the vibrant tapestry of Maharashtra's cultural richness, explore the mystical landscapes of Gujarat, and unwind in the lap of nature in the scenic hills of Maharashtra. Bharat Yatra beckons you to embark on a journey where each destination is a masterpiece, waiting to unfold its secrets, and every moment becomes a vibrant brushstroke on the canvas of your unforgettable West India adventure.</p>
+                <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Goa</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/44.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Acacia Palms </h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/45.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Emerald Palms</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/46.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Varca</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/47.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Assonara</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/48.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Courtyard Villa </h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/49.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Orchard Villa</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/50.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">River Villa </h5>
+                            </div>
+                        </div>
+                    </div>
+<!--                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">-->
+<!--                        <div class="card" id="cardtype1">-->
+<!--                            <img src="/static/images/4.jpg" class="card-img-top " alt="Image">-->
+<!--                            <div class="card-img-overlay d-flex flex-column-reverse" >-->
+<!--                                <h5 class="card-title h3 ">BharatYatra Janjehli</h5>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+
+               <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Gujarat</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/51.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Kensville Golf Resort</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/52.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Gir</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/53.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Dwarka</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/54.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Boulevard 9 Nadiad</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/55.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Netrang</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/56.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Bhanu The Fern Forest Resort Jambughoda</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+               <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Maharshtra</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/57.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Hatgad</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/58.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Sherwood Mahabaleshwar</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/59.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Saj Mahabaleshwar</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/60.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Alibaug</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/61.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Tungi Lonavala</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/62.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Forest Escape Koyna</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/63.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">Riverside Country Resort Amba Ghat</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/64.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Imagica Hotel</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+               <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Rajasthan</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/65.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Udaipur</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/66.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Jaisalmer</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/67.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Kumbhalgarh</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/68.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Pratap Niwas Palace Jodhpur</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/69.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Jaipur</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/70.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Hotel Aravali, Mount Abu</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/71.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">Hotel Tiger Kingdom</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/72.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Hummingbird Resort</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+               <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Madhya Pradesh </h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/73.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Kanha</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/74.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Resort Bandhavgarh</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/75.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Resort Khajuraho</h5>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+               <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Daman Diu</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/76.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Azzaro Resort & Spa Diu</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/77.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Devka Beach Resort</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!--                east -->
+                <section style="background-color: #e6be8a " id="east">
+                <h1 class="text-center display-5 mx-1 pb-3 pt-5" id="main_heading3">Places & Resorts in East India</h1>
+                <p class="display-7 m-3">Discover a realm of serenity and opulence in the eastern heartlands of India with BharatYatra Holidays. Our curated resorts are more than destinations; they are havens where the whispers of nature meet the lap of luxury. Immerse yourself in the breathtaking landscapes of East India, from the lush tea plantations of Darjeeling to the pristine beaches of Odisha. Let BharatYatra be your guide to the hidden treasures of the east, where every corner unfolds a new adventure and every place tells a story. Indulge in the charm of heritage sites, vibrant cultures, and unparalleled hospitality, as BharatYatra Holidays turns your travel dreams into captivating realities. Join us in the enchanting tapestry of East India, where every journey is a chapter waiting to be written.</p>
+                <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In Sikkim</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/78.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Gangtok</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/79.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">BharatYatra Baiguney</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/80.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse">
+                                <h5 class="card-title h3 ">BharatYatra Gangtok</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/81.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Yashshree Lachung</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  <h1 class="text-center display-6 mx-1 mt-5 pb-3 pt-2" id="main_heading3">BharatYatra Resorts In West Bengal</h1>
+
+                <div class="row gx-lg-3 gy-md-4 gy-sm-4 px-5">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/82.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Summit Hermon</h5>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                        <div class="card" id="cardtype1">
+                            <img src="/static/images/83.jpg" class="card-img-top " alt="Image">
+                            <div class="card-img-overlay d-flex flex-column-reverse" >
+                                <h5 class="card-title h3 ">Summit Barsana</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--Footer-->
+
+        <section>
+            <footer class="w-100 py-4 flex-shrink-0">
+                <div class="container py-4">
+                    <div class="row gy-4 gx-5">
+                        <div class="col-lg-4 col-md-6">
+                            <h5 class="h1 text-white">BharatYatra Holidays </h5>
+                            <p class="small text-muted">For Member Enquiries <br>
+                                memberexperience@BharatYatraholidays.com</p>
+                                <p class="small text-muted">For Franchisee Enquiries <br>
+                                    business.partner@BharatYatraholidays.com</p>
+
+                            <p class="small text-muted mb-0"> Copyright &copy; 2024 BharatYatra & BharatYatra Ltd. All rights reserved</p>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <h5 class="text-white mb-3">Important Links</h5>
+                            <ul class="list-unstyled text-muted">
+                                <li><a href="#east">Resorts in East</a></li>
+                                <li><a href="#west">Resorts in West</a></li>
+                                <li><a href="#south">Resorts in South</a></li>
+                                <li><a href="#north">Resorts in North</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <h5 class="text-white mb-3">External Links</h5>
+                            <ul class="list-unstyled text-muted">
+                                <li><a href="#">TripAdvisor</a></li>
+                                <li><a href="#">MakeMyTrip</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Legal</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <h5 class="text-white mb-3">Newsletter</h5>
+                            <p class="small text-muted">Subscribe to our newsletter to get exciting new offers and exclusive content</p>
+                            <form action="#">
+                                <div class="input-group mb-3">
+                                    <input class="form-control text-white" id="footer_form" type="text" placeholder="email">
+                                    <button class="btn btn-primary" id="button-addon2" type="button"><i
+                                            class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+</body>
+</html>

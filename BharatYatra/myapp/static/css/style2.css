@@ -1,0 +1,34 @@
+.container-fluid {
+      padding-right: 0;
+      padding-left: 0;
+  }
+
+  #navelts a {
+      color: #fdfdfd;
+  }
+
+  #navelts {
+      color: #fdfdfd;
+  }
+.parallax {
+  background-size: cover;
+  background-attachment: fixed;
+ height: 100vh;
+ }
+
+
+#hero_head{
+    font-family: 'Merriweather', serif;
+    color: #fdfdfd;
+    padding-top: 15%;
+}
+
+#hero_subhead{
+    font-family: 'Kalam', cursive;
+    color: #fdfdfd;
+}
+ .seccon{
+    height: auto;
+             font-family: 'Pacifico', cursive;
+            text-align: center;
+}

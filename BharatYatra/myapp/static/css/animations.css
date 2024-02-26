@@ -1,0 +1,16 @@
+.card{
+    transition: transform 0.2s;
+}
+.card:hover{
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#btn_type1{
+    transition: 0.15s;
+    opacity: 0;
+}
+
+.card:hover #btn_type1{
+    opacity: 80;
+}
